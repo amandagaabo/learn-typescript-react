@@ -1,17 +1,15 @@
 import React from 'react';
 
-// return type any for html
-type Props = {
+// use an interface to define types of props
+interface UserMessage {
     message: string,
-    messageTwo: string
+    name: string
 };
 
-const Message = (props: Props): any => {
+// return type is any for html
+const Message = (props: UserMessage): any => {
     return (
-        <>
-            <p>{props.message}</p>
-            <p>{props.messageTwo}</p>
-        </>
+        <p>{props.name}, {props.message}</p>
     );
 }
 

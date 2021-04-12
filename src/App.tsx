@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Message message="This is a message!" messageTwo="Second line message." />
+        <Message message="welcome to the site!" name="Tara" />
       </header>
     </div>
   );
