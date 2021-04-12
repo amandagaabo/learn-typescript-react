@@ -1,16 +1,12 @@
-import React from 'react';
-
-// use an interface to define types of props
-interface UserMessage {
-    message: string,
-    name: string
-};
+import messageHoc from "./HOC";
 
 // return type is any for html
-const Message = (props: UserMessage): any => {
+const example = (props: any): any => {
     return (
         <p>{props.name}, {props.message}</p>
     );
 }
+
+const Message = messageHoc(example);
 
 export default Message;
